@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light-theme">
+    <div class="dashboard">
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <img src="download.png" alt="Business Logo" class="logo">s
+                <span class="theme-switcher">Light/Dark</span>
+                <img src="po1.jpeg" alt="User po" class="po">
+            </div>
+            <nav >
+                <ul class="space">
+                    <li><a href="#">Login</a></li><hr
+                    <li><a href="#">Settings</a></li><hr
+                    <li><a href="#">Products</a></li><hr
+                    <li><a href="#">Contact</a></li><hr
+                    <li><a href="#">Customer</a></li><hr
+                   <li><a href="#">log Out</a></li><hr
+                </ul>
+            </nav>
+        </aside>
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <h1>Digital Markating</h1>
+            </header>
+            <section class="dashboard-overview">
+                <div class="overview-item">
+                    <h2>Booked</h2>
+                    <p>300</p>
+                </div>
+                <div class="overview-item">
+                    <h2>Conformed</h2>
+                    <p>366</p>
+                </div>
+                <div class="overview-item">
+                    <h2>Users</h2>
+                    <p>6,767</p>
+                </div>
+                <div class="overview-item">
+                    <h2>Subscription</h2>
+                    <p>2,999</p>
+                </div>
+                <div class="overview-item">
+                    <h2>Total Month</h2>
+                    <p>68,45</p>
+                </div>
+                <div class="overview-item">
+                    <h2>Revenue</h2>
+                    <p>20,55</p>
+                </div>
+            </section>
+            <section class="charts-section">
+                <div class="chart-container">
+                    <h3>Activity User (Pie Chart)</h3>
+                    <canvas id="activityPieChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3> Activity User (Line Chart)</h3>
+                    <canvas id="activityLineChart"></canvas>
+                </div>
+                <div class="chart-container left">
+                    <h3>replace Dynamics</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                </section>
+            <section class="dashboard-tables">
+                <div class="table-container">
+                    <h3>Paid Invoices</h3>
+                    <p>$69,000.56</p>
+                </div>
+                <div class="table-container">
+                    <h3>Funds Received</h3>
+                    <p>$150,256</p>
+                </div>
+                <div class="table-container">
+                    <h3>Customer Order</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Dob</th>
+                                <th>Date</th>
+                                <th>Cash</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Raj</td>
+                                <td>24/08/2024</td>
+                                <td>$600</td>
+                                <td>Sucess</td>
+                            </tr>
+                            <tr>
+                                <td>Ram</td>
+                                <td>25/09/2024</td>
+                                <td>$800</td>
+                                <td>Pending</td>
+                            </tr>
+                            <!-- Additional rows here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
